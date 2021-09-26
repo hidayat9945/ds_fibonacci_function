@@ -1,4 +1,4 @@
-def find_fibonacci(x: int) -> bool:
+def find_fibonacci(num: int) -> bool:
     """
     Menemukan bilangan bulat x di dalam suatu deret fibonacci.
     Apabila x ada di dalam suatu deret fibonacci, maka kembalikan True.
@@ -11,7 +11,7 @@ def find_fibonacci(x: int) -> bool:
     if (num < 0):
         print("Your number is negative")
     else:
-        while (count < num+3):
+      while (count < num+3):
         res.append(n1)
         # print(n1)
         nth = n1 + n2
@@ -20,15 +20,9 @@ def find_fibonacci(x: int) -> bool:
         n2 = nth
         count += 1
     # print(res)
+
+    print(num)
     if (num in res):
         return True
     else:
         return False
-
-
-if __name__ == "__main__":
-    """Jalankan beberapa test-case di bawah sini
-    """
-    print(find_fibonacci(1))
-    print(find_fibonacci(10))
-    print(find_fibonacci(11))
