@@ -25,8 +25,6 @@ def find_fibonacci(x: int) -> bool:
     else:
         return False
 
-  
-
 
 if __name__ == "__main__":
     """Jalankan beberapa test-case di bawah sini
