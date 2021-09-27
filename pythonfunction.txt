@@ -1,0 +1,20 @@
+n = int(input("Masukkan Angka: ")) #untuk memasukan angka yang diinginkan
+
+def fib(x):
+
+    n = int(math.sqrt(x)) #parameter bilangan lebih dari 0
+
+    return n*n == x   
+
+def find_fibonacci(x):
+
+    return fib(5*x*x + 4) or fib(5*x*x - 4) #rumus fibonacci
+
+if(find_fibonacci(n) == True):
+
+    print( n," Termasuk Deret Fibonacci")
+
+else:
+
+    print( n," Tidak Termasuk Deret Fibonacci")
+
